@@ -26,10 +26,10 @@ int main()
 	
   /* Heres an idea of what the element structure is doing
 	element* pp = &s1;
-	std::cout << pp << std::endl;
-	std::cout << pp->next << std::endl;
-	pp = pp->next;
-	std::cout << pp->next << std::endl;
+	std::cout << pp << std::endl; //prints address of s1
+	std::cout << pp->next << std::endl; //prints address of s2
+	pp = pp->next; //GETS address of s2 
+	std::cout << pp->next << std::endl; //prints address of s3, pp already is at s2 so its doing some sort of arithmetic to get to s3
 */
 
 

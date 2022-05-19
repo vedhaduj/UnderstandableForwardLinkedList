@@ -32,7 +32,10 @@ int main()
 	std::cout << pp->next << std::endl; //prints address of s3, pp already is at s2 so its doing some sort of arithmetic to get to s3
 */
 
-
+                   //why is cursor in the condition?
+	           //this is because cursor = cursor->next cant be null so we must have that cursor
+	           //at s1 
+	           //this might be a implicit explaination but it'll do for now.
 	for (element* cursor = &s1; cursor; cursor = cursor->next)
 	{
 	   std::cout << "stormtrooper: " << cursor->prefix[0] << cursor->prefix[1] << cursor->operating_number << std::endl;
